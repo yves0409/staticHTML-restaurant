@@ -1,0 +1,471 @@
+*{
+  box-sizing: border-box;
+}
+.gradient{
+  background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 20vh;
+}
+.container{
+  width: 90vw;
+  max-width: 1700px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+.flex-grid {
+  display: flex;
+}
+section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+section.full-screen-image {
+  background-size:cover;
+  background-position: center;
+}
+section.hero {
+  background-image: url(../img/sla.jpg);
+  min-height:75vh;
+}
+section.hero .container {
+  height:100%;
+}
+section.menu .container {
+  display: flex;
+}
+section.hero .center {
+  text-align:center;
+  width: 100%;
+}
+section.hero .center .rainbow {
+  font-size:3.5rem;
+  line-height: 4.5rem;
+  font-family: 'Yeseva One',cursive;
+  }
+nav {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  }
+nav .logo {
+  width:210px;
+}
+nav .logo img {
+  display: block;
+}
+nav ul {
+  margin: 0;
+  font-family: 'Yeseva One', cursive;
+  font-size: 0.9rem;
+}
+nav ul li {
+  display: inline;
+}
+nav ul li.active a {
+  border-top: 4px solid #c4c1b9;
+}
+nav ul li a {
+  display: inline-block;
+  border-top: 4px solid rgba(0, 0, 0, 0);
+  transition: all 1s ease;
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+nav ul li a:hover {
+  border-top: 4px solid #c4c1b9;
+}
+#myLinks {
+  margin-top: 25px;
+}
+.btn {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.1rem;
+  font-weight: light;
+  display: inline-block;
+  padding: 1em 2em;
+  border: 1px solid white;
+  transition: all 1s ease;
+  text-decoration: none;
+  text-transform: uppercase;
+  opacity: 0.6;
+  transition: opacity 1s ease;
+  margin-bottom: 1em;
+  border-radius: 8px;
+}
+.btn:hover {
+  opacity: 1;
+  }
+.btn.dark {
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid black;
+  color: white;
+}
+.btn.light {
+  background: rgba(255, 255, 255, 0.7);
+  border: 2px solid black;
+  color: black;
+}
+.responsive-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.orn img { 
+  position: relative; top: -16px; 
+  width: 200px;
+  height:80px;
+}
+.headerorn {  
+  text-align: center;
+}
+.headerorn img { 
+  position: relative; top: -16px; 
+  width: 300px;
+  height:100px;
+}
+/* chef section */
+
+section.chef {
+  background-image: url(../img/pattern.png)
+}
+section.chef .container {
+  display: flex;
+  flex-direction: row;
+  }
+.container .chefword {
+  padding: 15px;
+  height: auto;
+  width: 60vw;
+  margin: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column; 
+  }
+.orn {  
+  text-align: center;
+  }
+.container .chefword .cook {
+  height: 300px;
+  background-image: url(../img/cook.png);
+  background-repeat: no-repeat;
+  position: relative;
+  left:30%;
+  }
+.chefword h1 {
+  text-align: center;
+  color: #d8be74;
+ }
+.chefword p {
+  color:#d8be74;
+  padding: 0 40px 0 40px;
+ }
+.container .chefplate {
+  display: flex;
+  flex: 1;
+ }
+.chefplate img {
+  width: 100%;
+  height:100%;
+ }
+
+ /* menu style */
+
+ #menu {
+  background-image: url(../img/pattern.png);
+}
+.tables {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-gap:90px;
+  width: 70vw; 
+  margin: 0 auto;
+  }
+.tables h1 {
+  text-align: center;
+  color: #d8be74;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  }
+table {
+  margin-top: 10px;
+  margin-left: 10px;
+  position: relative;
+  border-collapse: collapse;
+  padding: 1rem;
+  width: auto;
+  /* margin-left: 10px; */
+  /* margin-right: 10px; */
+  }
+table th {
+  padding: 1rem;
+  font-family: "Yeseva One", cursive;
+  color: #d8be74;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #d8be74;
+  }
+table th:first-child {
+  text-align: left  ;     
+  }
+table th:last-child {
+  text-align: right ;      
+  }
+table td {
+  color: black;
+  padding: 0.9rem;
+  padding: 0px 10px 8px 10px;
+  padding-top: 10px;
+  }
+input:hover {
+  border: 2px solid #d8be74;
+  }
+.special:after {
+  content: "Special";
+  box-sizing: border-box;
+  padding: 5px 15px;
+  color: white;
+  display: inline;
+  background: #d8be74;
+  position: absolute;
+  top: -30px;
+  right: -1px;
+  border: 1px solid #d8be74;
+  } 
+.special {
+  margin-top: 40px;
+  }  
+.special thead{
+  border: 1px solid #d8be74; 
+  }
+.special tbody{
+  border: 1px solid #d8be74; 
+  }
+
+/* ingredients style */
+
+section.ingredients {
+  background-image: url(../img/bg.png);
+  min-height: 80vh;
+  background-repeat: no-repeat;
+}
+section.fullscreen_img {
+  background-size:cover;
+  background-position: center;
+}
+section.ingredients .container {
+  display: flex;
+  justify-content:flex-end;
+  align-items:center;
+}
+section.ingredients .ingredientbox {
+  height :500px;
+  width: 500px;
+  background-color: black;
+  opacity: 0.5;
+  color: azure;
+  text-align: center;
+}
+.ingredientbox p {
+  padding: 0px 45px 100px 45px;
+}
+
+/* reservation style */
+
+section.input {
+  background-image: url(../img/pattern.png);
+}
+section.input .container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  }
+.container .picfield {
+  flex:1;
+  margin: 5px;
+  display:flex;
+  flex-direction:row;
+  }
+.leftpic {
+  background-image: url(../img/gerecht.png);
+  background-repeat: no-repeat;
+  height: 507px;
+  margin: 5px;
+  flex:1;
+  }
+.rightpic {
+  background-image: url(../img/kers.png);
+  background-repeat: no-repeat;
+  height: 507px;
+  margin: 5px;
+  flex:1;
+  }
+.container .inputfield {
+  padding: 15px;
+  text-align: center;
+  flex:1;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px;
+  }
+.inputfield table {
+  margin-top: 0px;
+  }
+.inputfield table tr{
+  font-size: 20px;
+  text-align: left;
+  }
+.inputfield table td{
+  height:20px;
+  }
+.inputfield p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  }
+section.input h1 {
+  color:#d8be74;
+  margin-bottom: 5px;
+  }
+#resbtn {
+  width: 200px;
+  height: 40px;
+  background-color: #d8be74;
+  color: white;
+  text-align: center;
+  }
+  #resbtn:hover {
+    
+    opacity:0.8;
+    border: 1px solid #000;
+    border-radius: 0.5px;
+  }
+.formdes {
+    color:#d8be74;
+  }
+
+  /* reviews style */
+
+  section.reviews {
+    background-image: url(../img/sate.png);
+    min-height: 70vh;
+    background-repeat: no-repeat;
+    }
+section.full-screen-image {
+    background-size:cover;
+    background-position: center;
+    }
+.reviews .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+section.reviews .guestreviews {
+    height :500px;
+    width: 500px;
+    background-color: black;
+    opacity: 0.8;
+    color: azure;
+    text-align: center;
+    }
+.guestreviews p {
+    font-size:25px;
+    padding: 10px;
+    }
+.guestreviews p:last-child {
+    font-size: 15px;
+    } 
+
+    /* footer style */
+
+    section.footer {
+    background-color: black
+    }
+section.footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+section.footer .container h1 {
+    text-align: center;
+    color: white;
+    }
+section.footer .container p {
+    color: white;
+    }
+section.footer .footerbox {
+    padding: 10px;
+    }
+.footerbox1 {
+    flex:1.4; 
+    padding: 20px;
+    margin-right: 25px;
+    text-align:center;
+    }
+.footerbox2 {
+    flex:1; 
+    padding: 20px;
+    margin-right: 25px;
+    text-align: center;
+    }
+.footerbox3 {
+    flex:1; 
+    padding: 20px;
+    margin-right: 10px;
+    text-align: center;
+    }
+#social ul {
+    padding: 5px;
+    }
+#social ul li {
+    display: inline-block;
+    }
+#social ul li a{
+    color:white;
+    }
+#payment ul {
+    padding: 5px;
+    }
+#payment ul li {
+    display: inline-block;
+    }
+#payment ul li a{
+    color:white;
+    }
+
+#weather-state {
+     height:100px;
+     width:100px;
+     /* display: none; */
+     }
+.lds-spinner {
+    color: official;
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    }
+.lds-spinner div {
+    transform-origin: 32px 32px;
+    animation: lds-spinner 1.2s linear infinite;
+    }
+.lds-spinner div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    } 
+#weather {
+    color: bisque;
+    }
+
+
+
+
+
+
+

@@ -1,0 +1,93 @@
+
+@media only screen and (max-width: 750px) {
+  .tables {
+    flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+   section.input .container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .leftpic {
+    min-width: 200px;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+   .rightpic {
+     min-width: 200px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+    section.footer .container {
+      flex-direction: column;
+    }
+} 
+@media only screen and (max-width: 900px) {
+    section.chef .container {
+     flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+    .container .chefword {
+      width: 80vw;
+    }
+  }  
+
+@media only screen and (min-width: 750px) {
+    .chefplate img {
+      min-width: 600px;
+      max-height:600px;
+    }
+  }
+
+@media only screen and (max-width: 720px) {
+    nav ul {
+      display:none;
+    }
+     nav {
+      background-color:rgb(16, 54, 47);
+      border-radius:8px;
+      opacity: 0.8;
+      padding-bottom: 20px;
+    }
+  }
+
+@media only screen and (min-width: 720px) {
+   .mobilenav {
+    display:none;
+    }
+   #hamburger{
+    display: none;
+    }
+  }
+
+@media only screen and (max-width: 650px) {
+  .inputfield table tr{
+    font-size: 15px;;
+    }
+  }
+
+@media only screen and (max-width: 750px) {
+    .tables {
+  display:grid;
+  grid-template-columns:1fr;
+  
+  width: 70vw; 
+  margin: 0 auto;
+    }
+  }
+ 
+
+
+
+
+
+
+
